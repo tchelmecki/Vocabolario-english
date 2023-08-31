@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabolario - Game 2</title>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+  <link rel="stylesheet" href="/styleG2.css">
+  <script src="/js/wordScramble.js" defer></script>
+  <script src="/js/wordsG2.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Układanie słów</h2>
+    <div class="G2info" id="G2info">
+    <center><h3 class="welcome">Cześć!</h3></center> 
+      "Układanie słów" ma na celu ułożenie poprawnego 
+      słowa z liter, które zostały losowo wymieszane. 
+      Gra polega na podaniu zestawu liter i próbie ułożenia z nich 
+      słowa oznaczającego 
+      określony przedmiot, zwierzę, miejsce, czynność lub inny temat. 
+      Wymaga ta gra od graczy myślenia w kategoriach słownictwa i zastosowania
+       kreatywności, aby znaleźć poprawne rozwiązanie.
+    </div>
+    <center><div class="startArea" onclick="start()"><button class="startBtn">Start the Game</button></div></center>
+    <div class="content">
+      <p class="word"></p>
+      <div class="details">
+        <p class="hint">Wskazówka: <span></span></p>
+        <p class="time">Pozostało czasu: <span><b>30</b></span></p>
+      </div>
+      <input type="text" spellcheck="false" placeholder="Wprowadź prawidłowe słowo">
+      <div class="buttons">
+        <button class="refresh-word">Reset</button>
+        <button class="check-word">Sprawdź słowo</button>
+
+      </div>
+      <div class="score-area"><span>Punkty: </span><span class="score">0</span></div>
+    </div>
+  </div>
+
+   <!-- The Modal -->
+   <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+  
+</body>
+</html>

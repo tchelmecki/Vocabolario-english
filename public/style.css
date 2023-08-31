@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/*RESET*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+input, a, button{
+    cursor: pointer;
+}
+body{
+    background-image: url(/img/tlo.jpg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #3f1158;
+    
+}
+.container{
+    display: flex;   
+    flex-direction: column;
+    position: relative;
+}
+.header{
+    position: absolute;
+    width: 400px;
+    top: -100px;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgba(255, 255, 255, .15);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.input-box{
+     width: 320px;
+     margin: 30px 0;
+     border-bottom: 2px solid #fff;
+     position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/*AKCJE NA INPUTACH*/
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: 4px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remeber-me{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: .9em;
+}
+
+.remeber-me a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remeber-me label input {
+    accent-color: #fa709a;
+    margin-right: 3px;
+}
+
+button{
+    width: 100%;
+    height: 45px;
+    background-color: #eb45a3;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+button:hover
+{
+    background-color: #df449c;
+    transition: 0.4s ease-in-out;
+}
+
+.register{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer{
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    bottom: -70px;
+}
+
+.error_message{
+    color: red !important;
+    position: absolute;
+    top: 100px;
+    right: 45px;
+}
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+
+
+/* 500px */
+
+@media only screen and (max-width: 500px) {
+
+    .input-box input {
+        width: 100%;
+        height: 40px;
+        font-size: .7em;
+        padding: 5px 37px 0 5px;
+    }
+    
+
+    h2{
+        font-size: 1.5em;
+        
+    }
+
+    .header{
+        position: absolute;
+        width: 300px;
+        top: -80px;
+    }
+
+    .wrapper{
+        
+        width: 300px;
+        height: 350px;
+       
+    }
+
+    .input-box{
+        width: 250px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+        position: relative;
+   }
+   
+   .input-box label{
+       position: absolute;
+       top: 50%;
+       left: 5px;
+       transform: translateY(-50%);
+       font-size: .9em;
+       pointer-events: none;
+       transition: .5s;
+   }
+
+   .remeber-me{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0px 15px;
+    font-size: .75em;
+    }
+   
+   button{
+    width: 100%;
+    height: 45px;
+    background-color: #eb45a3;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: .9em;
+    font-weight: bold;
+    color: #fff;
+    }
+
+    .register{
+        font-size: .8em;
+        
+    }
+    
+    .footer{
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        bottom: -80px;
+        font-size: .9em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 330px */
+
+@media only screen and (max-width: 330px) {
+
+    .input-box input {
+        width: 100%;
+        height: 40px;
+        font-size: .7em;
+        padding: 5px 37px 0 5px;
+    }
+    
+
+    h2{
+        font-size: 1.2em;
+        
+    }
+
+    .header{
+        position: absolute;
+        width: 250px;
+        top: -80px;
+    }
+
+    .wrapper{
+        
+        width: 250px;
+        height: 350px;
+       
+    }
+
+    .input-box{
+        width: 230px;
+        margin: 30px 0;
+        border-bottom: 2px solid #fff;
+        position: relative;
+   }
+   
+   .input-box label{
+       position: absolute;
+       top: 50%;
+       left: 5px;
+       transform: translateY(-50%);
+       font-size: .8em;
+       pointer-events: none;
+       transition: .5s;
+   }
+
+   .remeber-me{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0px 15px;
+    font-size: .7em;
+    }
+
+    .remeber-me a{
+        margin-top: 2px;
+    }
+   
+   button{
+    width: 100%;
+    height: 45px;
+    background-color: #eb45a3;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: .8em;
+    font-weight: bold;
+    color: #fff;
+    }
+
+    .register{
+        font-size: .7em;
+        
+    }
+    
+    .footer{
+        position: absolute;
+        width: 250px;
+        text-align: center;
+        bottom: -80px;
+        font-size: .9em;
+    }
+
+}

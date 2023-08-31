@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabolario - Game 3</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="/styleG3.css">
+</head>
+<body>
+    <!--<div id="loader"></div>!-->
+    <div class="container" id="container2">
+          <div class="headerG3">
+        <!--<span class="icon1"><a href="mainphone.html"><ion-icon name="arrow-back-outline"></ion-icon></a><span class="title">Zaznacz odpo</span> </span>!-->
+        <div class="titleGame">Wpisz słowo</div>
+        <div class="icon4"><ion-icon name="ellipsis-vertical"></ion-icon></div>
+    </div>
+    <div class="main-pol">
+        <div class="word">
+            <div id="score"></div>
+
+            <h3 id="word1"></h3>
+            <p id="result"></p> 
+        </div>
+    </div>
+    <div class="main-eng">
+        <div class="word">
+            <input type="text" id="answer" class="give-answer">
+        </div>
+    </div>
+    <div class="check-btn"> 
+        <button id="submit">Sprawdź</button>
+        <button onclick="resetGame()">Reset</button>
+    </div>
+    </div>
+    <script src="../js/game3.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

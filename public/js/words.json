@@ -1,0 +1,188 @@
+{
+    "categories": [
+      {
+        "id": "1",
+        "name": "kolory",
+        "icon": "/img/color-palette-outline.svg",
+        "words": [
+          {
+            "polish": "czerwony",
+            "english": "red"
+          },
+          {
+            "polish": "biały",
+            "english": "white"
+          },
+          {
+            "polish": "żółty",
+            "english": "yellow"
+          }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "owoce",
+        "icon": "/img/nutrition-outline.svg",
+        "words": [
+          {
+            "polish": "jabłko",
+            "english": "apple"
+          },
+          {
+            "polish": "banan",
+            "english": "banana"
+          },
+          {
+            "polish": "arbuz",
+            "english": "watermelon"
+          }
+          
+        ]
+      },
+      {
+        "id": "3",
+        "name": "warzywa",
+        "icon": "/img/leaf-outline.svg",
+        "words": [
+          {
+            "polish": "pomidor",
+            "english": "tomato"
+          },
+          {
+            "polish": "ogórek",
+            "english": "cucumber"
+          },
+          {
+            "polish": "papryka",
+            "english": "bell peper"
+          },
+          {
+            "polish": "burak",
+            "english": "beetroot"
+          },
+          {
+            "polish": "kalafior",
+            "english": "cauliflower"
+          },
+          {
+            "polish": "fasola",
+            "english": "beans"
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "człowiek",
+        "icon": "img/accessibility-outline.svg",
+        "words": [
+          {
+            "polish": "głow",
+            "english": "head"
+          },
+          {
+            "polish": "noge",
+            "english": "leg"
+          },
+          {
+            "polish": "dłoń",
+            "english": "hand"
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "rośliność",
+        "icon": "img/flower-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          }
+        ]
+      },
+      {
+        "id": "6",
+        "name": "zwierzęta",
+        "icon": "img/paw-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "name": "państwa i miasta",
+        "icon": "/img/earth-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          }
+        ]
+      },
+      {
+        "id": "8",
+        "name": "sport",
+        "icon": "img/car-sport-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          },
+          {
+            "polish": "chleb",
+            "english": "bread"
+          }
+        ]
+      },
+      {
+        "id": "9",
+        "name": "komputer",
+        "icon": "img/hardware-chip-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          }
+        ]
+      },
+      {
+        "id": "10",
+        "name": "ubrania",
+        "icon": "img/shirt-outline.svg",
+        "words": [
+          {
+            "polish": "marchewka",
+            "english": "carrot"
+          },
+          {
+            "polish": "ziemniak",
+            "english": "potato"
+          }
+        ]
+      }
+    ]
+  }
+  

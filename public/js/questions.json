@@ -1,0 +1,72 @@
+[   
+    {
+        "question": "pies",
+        "choice1": "cat",
+        "choice2": "dog",
+        "choice3": "pig",
+        "answer": 2
+    },
+    {
+        "question": "rower",
+        "choice1": "car",
+        "choice2": "house",
+        "choice3": "bike",
+        "answer": 3
+    },
+    {
+        "question": "smok",
+        "choice1": "dragon",
+        "choice2": "phoenix",
+        "choice3": "monster",
+        "answer": 1
+    },
+    {
+        "question": "kot",
+        "choice1": "carpet",
+        "choice2": "cat",
+        "choice3": "fish",
+        "answer": 2
+    },
+    {
+        "question": "noga",
+        "choice1": "leg",
+        "choice2": "feet",
+        "choice3": "head",
+        "answer": 1
+    },
+    {
+        "question": "kot",
+        "choice1": "carpet",
+        "choice2": "cat",
+        "choice3": "fish",
+        "answer": 2
+    },
+    {
+        "question": "stół",
+        "choice1": "table",
+        "choice2": "mirror",
+        "choice3": "chair",
+        "answer": 2
+    },
+    {
+        "question": "przyszłość",
+        "choice1": "tomorrow",
+        "choice2": "past",
+        "choice3": "future",
+        "answer": 3
+    },
+    {
+        "question": "mózg",
+        "choice1": "bone",
+        "choice2": "brain",
+        "choice3": "head",
+        "answer": 2
+    },
+    {
+        "question": "krzesło",
+        "choice1": "table",
+        "choice2": "chair",
+        "choice3": "bottle",
+        "answer": 2
+    }
+]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Vocabolario</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="/styleM.css">
+</head>
+<body>
+        <div class="headerM">
+            <div class="icon1">
+                <ul>
+                    <li><a href="/main">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+                 
+                <button class="burger">
+                    <div class="line"></div> 
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+               </div>
+            <span class="title"><a href="/main">VOCABOLARIO<img src="/book2.png" alt=""></a></span>
+            <div  class="icon2"><ion-icon name="ellipsis-vertical"></ion-icon></div>
+           
+            <span class="icon3"><div class="search">
+                <div class="icon-search"></div>
+                <div class="input-search" ><input type="text" id="mysearch" placeholder="Wyszukaj.." onkeyup="searchElement()"></div>
+                
+            </div></span>
+            <button class="modal-accept1">
+                <a href="/logout">WYLOGUJ</a>
+            </button>
+            
+            <span class="changeLang">kategorie<!--<ion-icon name="chevron-down-outline" class="changeLangIcon"></ion-icon>!--></span>
+            <div class="filtr"><span class="material-symbols-outlined"><ion-icon name="filter-outline"></ion-icon></span></div>
+        </div>
+        <div class="containerBlock">
+            <div class="tiles">
+                  
+                <% categories.forEach((category) => { %>
+                    <div class="tile1" onclick="redirectToWords('<%= category %>')">
+                      <h3><%= category %></h3>
+                      <% if (questionCounts[category] > 0) { %>
+                        <p>Liczba pytań: <%= questionCounts[category] %></p>
+                        <div class="startG1"></div>
+                      <% } else { %>
+                        <p>0</p>
+                        <% products.forEach((product) => {
+                          if (product.category === category && product.image) { %>
+                            <div class="icon-category"><img src="<%= question.image %>" alt="Icon"></div>
+                        <% }}); %>
+                      <% } %>
+                    </div>
+                  <% }) %>
+                <!--<div class="tile1"></div>
+                <div class="tile1">owoce <ion-icon name="nutrition-outline"></ion-icon></div>
+                <div class="tile1"> warzywa <ion-icon name="leaf-outline"></ion-icon></div>
+                <div class="tile1"> człowiek <ion-icon name="body-outline"></ion-icon></div>
+                <div class="tile1"> roślinność <ion-icon name="flower-outline"></ion-icon></div>
+                <div class="tile1"> zwierzęta <ion-icon name="paw-outline"></ion-icon></div>
+                <div class="tile1"> państwa i miasta <ion-icon name="earth-outline"></ion-icon></div>
+                <div class="tile1"> sport <ion-icon name="car-sport-outline"></ion-icon></div>
+                <div class="tile1"> komputer <ion-icon name="hardware-chip-outline"></ion-icon></div>
+                <div class="tile1"> ubrania <ion-icon name="shirt-outline"></ion-icon></div>
+                !-->
+            </div> 
+            <div class="plus-category"><span class="material-symbols-outlined"><ion-icon name="add-outline"></ion-icon></span></div>
+        </div>
+       
+    <script>
+        //feather.replace()
+        function redirectToWords(category) {
+    window.location.href = '/words?category=' + category;
+  }
+    </script>
+    <script src="public/js/burgir.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/plus.js"></script>
+    <script src="public/js/add.js"></script>
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

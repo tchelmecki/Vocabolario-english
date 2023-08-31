@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabolario</title>
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="/styleM.css">
+</head>
+<body>
+        <div class="headerM">
+            <div class="icon1">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+                 
+                <button class="burger">
+                    <div class="line"></div> 
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </button>
+               </div>
+            <span class="title"><a href="/">VOCABOLARIO</a></span>
+            <div  class="icon2"><ion-icon name="ellipsis-vertical"></ion-icon></div>
+           
+            <span class="icon3"><div class="search">
+                <div class="icon-search"></div>
+                <div class="input-search" ><input type="text" id="mysearch" placeholder="Wyszukaj.." onkeyup="searchElement()"></div>
+                
+            </div></span>
+            <span class="changeLang"><%= category %></span>
+            <div class="filtr"><span class="material-symbols-outlined"><ion-icon name="filter-outline"></ion-icon></span></div>
+        </div>
+        <div class="containerBlock">
+          <div class="tiles">
+            <table>
+              <thead>
+                <tr>
+                  <th>Polski</th>
+                  <th>Angielski</th>
+                  <th></th> <!-- Dodany nowy nagłówek dla przycisków akcji -->
+                </tr>
+              </thead>
+              <tbody id="words-container">
+                <% questions.forEach((question) => { %>
+                  <tr>
+                    <td><%= question.question %></td>
+                    <td><%= question.answer %></td>
+                    <td>
+                      <form action="/words/<%= question._id %>?_method=DELETE" method="POST">
+                        <button class="delete-button" type="submit">usuń</button>
+                      </form>
+                      
+                    </td>
+                  </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+          
+            <div class="plus-category"><span class="material-symbols-outlined"><ion-icon name="add-outline"></ion-icon></span></div>
+        </div>
+    <script>
+        feather.replace()
+    </script>
+    <script src="/js/burgir.js"></script>
+    <script src="/js/plus.js"></script>
+    <script src="/js/add.js"></script>
+    <script src="/js/words.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
